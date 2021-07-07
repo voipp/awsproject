@@ -7,5 +7,7 @@ urlpatterns = [
 
     path('<int:product_id>', views.extract, name='extract'),
 
-    path('<int:product_id>/add', views.add, name='add')
+    path('<int:product_id>/add', views.add, name='add'),
+
+    path('<int:product_id>/delete', views.delete, name='delete')
 ]
